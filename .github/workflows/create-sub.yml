@@ -29,6 +29,6 @@ jobs:
           managementGroupId: ${{ env.ManagementGroupPrefix }}
           region: ${{ env.location }}
           template: main.bicep
-          parameters: landingZones/lz2.parameters.json
+          parameters: landingZones/lz2.parameters.bicep
           deploymentName: Landing-Zone-${{ env.runNumber }}
           failOnStdErr: false
